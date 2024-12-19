@@ -1,15 +1,20 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>teabow</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teabow</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body style="background-color: #121212;">
-  <h1 style="font-family:arial; color: #ffffff">teabow</h1>
-  <img src="teabow.png" />
-  <br>
-  <a href="/contact" style="font-family:arial; color: #ffffff">contact</a>
+<body>
+    <pre id="ascii"></pre>
+    <script>
+        fetch('ascii.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('ascii').textContent = data;
+            })
+            .catch(error => console.error('Error loading ASCII art:', error));
+    </script>
 </body>
 </html>
