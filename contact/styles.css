@@ -1,0 +1,9 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #ff6400;
+    font-family: monospace;
+}
