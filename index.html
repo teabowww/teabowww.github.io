@@ -6,15 +6,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <pre id="ascii"></pre>
+    <pre id="ascii-teabow"></pre>
     <script>
-        fetch('ascii.txt')
+        fetch('ascii/teabow.txt')
             .then(response => response.text())
             .then(data => {
-                document.getElementById('ascii').textContent = data;
+                document.getElementById('ascii-teabow').textContent = data;
             })
             .catch(error => console.error('Error loading ASCII art:', error));
     </script>
-    <a href="/contact" id="contact-link">contact</a>
+    <a href="/contact" id="contact-link">
+        
+        <pre id="ascii-contact"></pre>
+        <script>
+            fetch('ascii/contact.txt')
+                .then(response => response.text())
+                .then(data = {
+                    document.getElementById('ascii-contact').textContent = data;
+                })
+                .catch(error => console.error('Error loading ASCII art:', error));
+        </script>
+
+    </a>
 </body>
 </html>
