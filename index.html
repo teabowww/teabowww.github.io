@@ -21,7 +21,7 @@
         <script>
             fetch('ascii/contact.txt')
                 .then(response => response.text())
-                .then(data = {
+                .then(data => {
                     document.getElementById('ascii-contact').textContent = data;
                 })
                 .catch(error => console.error('Error loading ASCII art:', error));
