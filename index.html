@@ -7,29 +7,24 @@
 </head>
 <body>
     <a href="/" id="contact-link">
-        <pre id="ascii-teabow"></pre>
-        <script>
-            fetch('/ascii/teabow.txt')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('ascii-teabow').textContent = data;
-                })
-                .catch(error => console.error('Error loading ASCII art:', error));
-        </script>
+        <pre id="ascii-teabow">
+ _             _                   
+| |_ ___  __ _| |__   _____      __
+| __/ _ \/ _` | '_ \ / _ \ \ /\ / /
+| ||  __/ (_| | |_) | (_) \ V  V / 
+ \__\___|\__,_|_.__/ \___/ \_/\_/
+        </pre>
     </a>
     
     <a href="/contact" id="contact-link">
         
-        <pre id="ascii-contact"></pre>
-        <script>
-            fetch('/ascii/contact.txt')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('ascii-contact').textContent = data;
-                })
-                .catch(error => console.error('Error loading ASCII art:', error));
-        </script>
-
+        <pre id="ascii-contact">
+                 _             _   
+  ___ ___  _ __ | |_ __ _  ___| |_ 
+ / __/ _ \| '_ \| __/ _` |/ __| __|
+| (_| (_) | | | | || (_| | (__| |_ 
+ \___\___/|_| |_|\__\__,_|\___|\__|
+        </pre>
     </a>
 </body>
 </html>
