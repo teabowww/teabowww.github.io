@@ -6,7 +6,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>contact</h1>
+    <a href="/" id="contact-link">
+        <pre id="ascii-teabow"></pre>
+        <script>
+            fetch('/ascii/teabow.txt')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('ascii-teabow').textContent = data;
+                })
+                .catch(error => console.error('Error loading ASCII art:', error));
+        </script>
+    </a>
+    
     <h2>discord: teabow.</h2>
 </body>
 </html>

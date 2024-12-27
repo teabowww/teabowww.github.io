@@ -9,7 +9,7 @@
     <a href="/" id="contact-link">
         <pre id="ascii-teabow"></pre>
         <script>
-            fetch('ascii/teabow.txt')
+            fetch('/ascii/teabow.txt')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('ascii-teabow').textContent = data;
@@ -22,7 +22,7 @@
         
         <pre id="ascii-contact"></pre>
         <script>
-            fetch('ascii/contact.txt')
+            fetch('/ascii/contact.txt')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('ascii-contact').textContent = data;
