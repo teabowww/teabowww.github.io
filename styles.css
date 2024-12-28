@@ -19,3 +19,7 @@ a {
     font-size: 12px;
     display: block;
 }
+
+a:hover {
+    font-weight: bold;  
+}
