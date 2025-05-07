@@ -23,3 +23,11 @@ a {
 a:hover {
     font-weight: bold;  
 }
+
+h2 {
+    font-weight: normal;
+}
+
+h2:hover {
+    font-weight: bold;
+}
