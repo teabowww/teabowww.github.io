@@ -16,12 +16,14 @@ pre {
 a {
     color: inherit;
     text-decoration: none;
-    font-size: 12px;
-    display: block;
 }
 
 a:hover {
     font-weight: bold;  
+}
+
+p {
+    margin-top: -1em;
 }
 
 h2 {
