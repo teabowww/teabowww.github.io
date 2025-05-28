@@ -1,0 +1,15 @@
+#iframe-container {
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+#iframe-container iframe {
+	width: 400px;
+	height: 442px;
+    position: absolute;
+    top: 0;
+    transform: translateY(-42px);
+    border: none;
+}
